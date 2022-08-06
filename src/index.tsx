@@ -2,16 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-// import { ModalState } from './contexr/ModalContext';
+import { ModalState } from './context/ModalContext';
 
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
 )
 root.render(
-	// <ModalState>
-	<App />
-	// </ModalState>
+	<ModalState>
+		<App />
+	</ModalState>
 )
 
 // If you want to start measuring performance in your app, pass a function
